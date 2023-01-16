@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Pixel Art using React.js
+This is a simple pixel art drawing programming using React App and some Plugins.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**You can:**
+1. Reset the font family, text size and text color of the entire app.
+1. Set the grid panel pixels between 8 12 16 32 pixel.
+1. Open and close color palette Pickers by clicking its icons.
+1. Pick a color and start drawing.
+1. Erase mode to erase a painted pixels.
+1. Download your design as PNG, GIF and JPEG.
+1. ... and more!
 
-## Available Scripts
+## Installation
+<!-- Try it now => [Pixel Art](https://) to have some fun. -->
 
-In the project directory, you can run:
+Use the package manager to install all packages.
 
-### `npm start`
+```bash
+npm install -S
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Packages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+# Styling
+npm install -S sass
 
-### `npm test`
+# Color Pickers
+npm install -S react-color
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# React Icons
+npm install -S react-icons
 
-### `npm run build`
+# Export Screenshot
+npm install -S react-component-export-image
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Font Family Configuration
+npm install -S webfontloader
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Task Result
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## React
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+I used the following technology / framework in my project:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- JavaScript / React
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+I chose React because of Develop Speed, bringing HTML code into JavaScript and working with virtual DOM
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Updates process is optimized and accelerated.
+- JSX makes components/blocks code readable. It displays how components are plugged or combined with.
+- React’s data binding establishes conditions for creating dynamic applications.
+- Prompt rendering. Using comprises methods to minimize the number of DOM operations helps to optimize the updating process and accelerate it.
 
-### Code Splitting
+- Testable. React’s native tools are offered for testing, debugging code.
+- SEO-friendly. React presents the first-load experience by server-side rendering and connecting event-handlers on the side of the user:
+1. React.renderComponentToString is called on the server.
+2. React.renderComponent() is called on the client-side.
+3. React preserves markup rendered on the server-side, attaches event handlers.
+- Up to date. The Facebook team supports the library. Advice or code samples can be given by the Facebook community.
+- Using React+ES6/7, the application gets high-tech and is suitable for high-load systems.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Installation / Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+To run the project locally, enter the following in the command line / bash:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```console
+$ git clone https://github.com/Ahmad-Haymour/Pixel-Art.git
+$ cd pixel-art
+$ npm install
+$ npm run start
+```
+---
 
-### Advanced Configuration
+## Packages
+* Or add it individually
+```bash
+# Styling
+npm install -S sass
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Color Pickers
+npm install -S react-color
 
-### Deployment
+# React Icons
+npm install -S react-icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Export Screenshot
+npm install -S react-component-export-image
 
-### `npm run build` fails to minify
+# Font Family Configuration
+npm install -S webfontloader
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+
+
+
+---
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
