@@ -1,6 +1,9 @@
 # Pixel Art using React.js
 This is a simple pixel art drawing programming using React App and some Plugins.
 
+
+Try it now => [Pixel Art](https://pixel-art-22.netlify.app/) to have some fun.
+
 **You can:**
 1. Reset the font family, text size and text color of the entire app.
 1. Set the grid panel pixels between 8 12 16 32 pixel.
@@ -10,7 +13,6 @@ This is a simple pixel art drawing programming using React App and some Plugins.
 1. Download your design as PNG, GIF and JPEG.
 1. ... and more!
 
-<!-- Try it now => [Pixel Art](https://) to have some fun. -->
 
 
 # Task Result
