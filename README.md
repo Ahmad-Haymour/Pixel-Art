@@ -10,35 +10,7 @@ This is a simple pixel art drawing programming using React App and some Plugins.
 1. Download your design as PNG, GIF and JPEG.
 1. ... and more!
 
-## Installation
 <!-- Try it now => [Pixel Art](https://) to have some fun. -->
-
-Use the package manager to install all packages.
-
-```bash
-npm install -S
-```
-
-## Packages
-
-```bash
-# Styling
-npm install -S sass
-
-# Color Pickers
-npm install -S react-color
-
-# React Icons
-npm install -S react-icons
-
-# Export Screenshot
-npm install -S react-component-export-image
-
-# Font Family Configuration
-npm install -S webfontloader
-
-```
-
 
 
 # Task Result
@@ -72,7 +44,7 @@ I chose React because of Develop Speed, bringing HTML code into JavaScript and w
 To run the project locally, enter the following in the command line / bash:
 
 ```console
-$ git clone https://github.com/Ahmad-Haymour/Pixel-Art.git
+$ git clone git@github.com:Ahmad-Haymour/Pixel-Art.git
 $ cd pixel-art
 $ npm install
 $ npm run start
