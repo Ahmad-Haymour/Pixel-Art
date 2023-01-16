@@ -2,7 +2,7 @@
 This is a simple pixel art drawing programming using React App and some Plugins.
 
 
-Try it now => [Pixel Art](https://pixel-art-22.netlify.app/) to have some fun.
+Try it now on your browser => [Pixel Art](https://pixel-art-22.netlify.app/) to have some fun.
 
 **You can:**
 1. Reset the font family, text size and text color of the entire app.
