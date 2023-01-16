@@ -1,0 +1,136 @@
+#Editor {
+  padding: 1rem 5rem;
+  margin-bottom: 20px;
+  height: 750px;
+  min-width: 600px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+  background-color: transparent !important;
+  color: whitesmoke;
+
+  > h2 {
+    border-bottom: 2px red solid;
+    border-radius: 15px;
+    color: whitesmoke;
+    margin: 1rem auto;
+    font-size: 2.2.4rem;
+    padding: 0.5rem;
+  }
+  .grid-dimensions {
+    margin: 1rem auto;
+    display: flex;
+    gap: 2rem;
+
+    > section {
+      border: 1px solid red;
+      border-radius: 10px;
+      padding: 1rem 0;
+
+      > label {
+        font-size: 1.8rem;
+      }
+
+      > select {
+        font-size: 1.5rem;
+        border-radius: 10px;
+        background-color: rgb(45, 45, 45);
+        height: 50px;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        color: whitesmoke;
+
+        > option {
+          padding: 50px;
+        }
+      }
+    }
+  }
+
+  > .grid-options {
+    
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 2rem;
+    >:first-child{
+        // margin-right: 1rem;
+    }
+    > button {
+      font-size: 2rem;
+      color: whitesmoke;
+      background-color: transparent;
+      border: 1px solid red;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-family: unset;
+    //   margin-right: -1rem;
+
+      &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    }
+  }
+
+  .colors-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    > h3 {
+      font-size: 2.4rem;
+    }
+    .colors-palette {
+ 
+      > .selected-color {
+        border: 4px solid white;
+        height: 2.8rem;
+        width: 150px;
+        cursor: pointer;
+      }
+    }
+  }
+  > .mode {
+    width: 300px;
+    margin: 0 auto;
+    > h3 {
+      margin: 1.5rem auto 3rem;
+      font-size: 2.5rem;
+      >span{
+        border-bottom: 2px solid red;
+        padding: .5rem 1rem;
+        font-size: 2rem;
+        text-transform: uppercase ;
+      }
+    }
+    > .options {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      > span {
+        font-size: 1.8rem;
+        padding: 0.5rem 1rem;
+        color: whitesmoke;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }    
+
+        > :first-child {
+          stroke: "white";
+          color: whitesmoke;
+          background-color: whitesmoke;
+          font-size: 6rem;
+          border: 1px solid rgba(255, 255, 255, 0.768);
+          padding: 1rem;
+        }
+      }
+    }
+  }
+}

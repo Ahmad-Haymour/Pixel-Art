@@ -1,0 +1,52 @@
+.wrapper {
+  display: grid;
+  place-items: center;
+  border-top: 1px solid whitesmoke;
+
+  > .editor-section{
+
+    position: relative;
+    >.sketch-picker {
+        position: absolute;
+        top: -3rem;
+        left: 5rem;
+    }
+  }
+
+  &.large-palette {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+
+    > .panel-section {
+      > #Panel {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+        .drawing-panel {
+          margin: 0;
+  
+        }
+        .colors-palette {
+          > .swatches-picker {
+            width: 660px !important;
+            height: 200px !important;
+            margin-left: -19.5rem !important;
+
+            > div {
+              > div {
+                > div {
+                  margin: 0;
+                  width: 970px !important;
+                  height: 160px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
