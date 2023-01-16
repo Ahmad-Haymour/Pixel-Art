@@ -44,7 +44,7 @@ I chose React because of Develop Speed, bringing HTML code into JavaScript and w
 To run the project locally, enter the following in the command line / bash:
 
 ```console
-$ git clone git@github.com:Ahmad-Haymour/Pixel-Art.git
+$ git clone https://github.com/Ahmad-Haymour/Pixel-Art.git
 $ cd pixel-art
 $ npm install
 $ npm run start
