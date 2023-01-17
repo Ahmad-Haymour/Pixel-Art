@@ -13,6 +13,7 @@ export default function Wrapper({
   globalColor,
   setGlobalColor,
   colorPickerDisplay,
+  globalSize
 }) {
 
   const { gridWidth } = useColorEditor();
@@ -26,10 +27,10 @@ export default function Wrapper({
             onChangeComplete={(color) => setGlobalColor(color.hex)}
           />
         )}
-        <Editor globalColor={globalColor} />
+        <Editor globalColor={globalColor}  globalSize={globalSize}/>
       </section>
       <section className="panel-section">
-        <Panel globalColor={globalColor} />
+        <Panel globalColor={globalColor} globalSize={globalSize} />
       </section>
     </div>
   );

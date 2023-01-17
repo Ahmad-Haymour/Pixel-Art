@@ -22,7 +22,8 @@ Try it now on your browser => [Pixel Art](https://pixel-art-22.netlify.app/) to 
 I used the following technology / framework in my project:
 
 - JavaScript / React
-
+- SASS
+---
 
 I chose React because of Develop Speed, bringing HTML code into JavaScript and working with virtual DOM
 
@@ -38,7 +39,7 @@ I chose React because of Develop Speed, bringing HTML code into JavaScript and w
 3. React preserves markup rendered on the server-side, attaches event handlers.
 - Up to date. The Facebook team supports the library. Advice or code samples can be given by the Facebook community.
 - Using React+ES6/7, the application gets high-tech and is suitable for high-load systems.
-
+---
 
 ## Installation / Run
 
@@ -54,7 +55,7 @@ $ npm run start
 ---
 
 ## Packages
-* Or add it individually
+* Or add the packages individually
 ```bash
 # Styling
 npm install -S sass

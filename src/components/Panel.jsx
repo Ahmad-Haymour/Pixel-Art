@@ -14,7 +14,7 @@ import {
   exportComponentAsPNG,
 } from "react-component-export-image";
 
-export default function Panel({ globalColor }) {
+export default function Panel({ globalColor, globalSize }) {
 
   // Reference Hook, render element
   const componentRef = useRef();
@@ -49,7 +49,6 @@ export default function Panel({ globalColor }) {
               gridHeight > 16 || gridWidth > 16 ? "span large-mode" : "span"
             }
           >
-            {" "}
             <AiOutlineCloseCircle
               style={{ color: selectedColor }}
               onClick={showDisplay}
@@ -57,26 +56,23 @@ export default function Panel({ globalColor }) {
           </span>
         </div>
       )}
-
       <div
         className="save-button"
         onClick={() => setShowDownloadOptions(!showDownloadOptions)}
       >
-        {gridHeight < 32 && <p style={{ color: globalColor }}>Save Options</p>}
+        {gridHeight < 32 && <p style={{ color: globalColor, fontSize: globalSize +"px" }}>Save Options</p>}
         <span style={{ color: globalColor }}>
           <MdSaveAlt />
         </span>
       </div>
-      <div className={"drawing-panel rotate-scale-up"} ref={componentRef}>
+      <div className={"drawing-panel slide-in-top"} ref={componentRef}>
         {rows.map((_, i) => (
           <Row key={i} />
         ))}
       </div>
-
       {showDownloadOptions && (
         <div className="import-image-wrapper">
           <span>
-            {" "}
             <AiOutlineCloseCircle onClick={() => setShowDownloadOptions(false)}>
               X
             </AiOutlineCloseCircle>

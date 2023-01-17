@@ -47,9 +47,10 @@ function App() {
           color: globalColor + " !important",
         }}
       >
+      <header>
         <div className="font-wrapper">
           <div className="font-option">
-            <label style={{ color: globalColor }}>Font Family: </label>
+            <label style={{ color: globalColor, fontSize: globalSize + "px" }}>Font: </label>
             <select
               defaultValue={globalFont}
               onChange={(event) => setGlobalFont(event.target.value)}
@@ -67,7 +68,7 @@ function App() {
             </select>
           </div>
           <div className="font-option">
-            <label style={{ color: globalColor }}>Font Size: </label>
+            <label style={{ color: globalColor, fontSize: globalSize + "px" }}>Size: </label>
             <input
               type="number"
               id="number"
@@ -77,31 +78,36 @@ function App() {
           </div>
 
           <div className="font-option">
-            <label style={{ color: globalColor }}>Font Color: </label>
+            <label style={{ color: globalColor, fontSize: globalSize + "px" }}>Color: </label>
             <input
               type="text"
               id="text"
+              placeholder="Color"
               onChange={(event) => {
                 console.log(event.target.value);
                 setGlobalColor(event.target.value);
               }}
-            />
-
+              />
             <span>
               <IoColorPalette
                 style={{ color: globalColor }}
                 onClick={() => setColorPickerDisplay(!colorPickerDisplay)}
+                title='Show Colors Picker'
               ></IoColorPalette>
             </span>
           </div>
         </div>
+
         <h1 style={{ color: globalColor }}>Pixel Art </h1>
+      </header>
 
         <Wrapper
           globalColor={globalColor}
+          globalSize={globalSize}
           setGlobalColor={setGlobalColor}
           colorPickerDisplay={colorPickerDisplay}
-        />
+          />
+          
       </div>
     </ColorEditorProvider>
   );

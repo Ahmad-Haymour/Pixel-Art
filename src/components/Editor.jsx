@@ -8,7 +8,7 @@ import { useColorEditor } from "../context/ColorEditorContext";
 import { GrPaint } from "react-icons/gr";
 import { FaEraser } from "react-icons/fa";
 
-export default function Editor({ globalColor }) {
+export default function Editor({ globalColor, globalSize }) {
   const {
     selectedColor,
     eraseMood,
@@ -24,8 +24,8 @@ export default function Editor({ globalColor }) {
   } = useColorEditor();
 
   // Virtual width to memorize the grid dimension before creating a new panel or erase panel.
-  const [width, setWidth] = useState(8);
-  const [height, setHeight] = useState(8);
+  const [width, setWidth] = useState(16);
+  const [height, setHeight] = useState(16);
 
   // Width Memorize 
   const changeWidth = (e) => {
@@ -45,10 +45,10 @@ export default function Editor({ globalColor }) {
 
   return (
     <div id="Editor">
-      <h2 style={{ color: globalColor }}>Choose Grid Dimensions</h2>
+      <h2 style={{ color: globalColor, fontSize: globalSize + "px" }}>Choose Grid Dimensions</h2>
       <div className="grid-dimensions">
         <section>
-          <label htmlFor="width" style={{ color: globalColor }}>
+          <label htmlFor="width" style={{ color: globalColor, fontSize: globalSize + "px" }}>
             Grid Width:{" "}
           </label>
           <select
@@ -64,7 +64,7 @@ export default function Editor({ globalColor }) {
           </select>
         </section>
         <section>
-          <label htmlFor="height" style={{ color: globalColor }}>
+          <label htmlFor="height" style={{ color: globalColor, fontSize: globalSize +"px"}}>
             Grid Height:{" "}
           </label>
           <select
@@ -82,19 +82,19 @@ export default function Editor({ globalColor }) {
       </div>
 
       <div className="grid-options">
-        <button onClick={createGridPanel} style={{ color: globalColor }}>
+        <button onClick={createGridPanel} style={{ color: globalColor, fontSize: globalSize +"px" }}>
           Create Grid
         </button>
         <button
           onClick={() => setEraseGridPanel(!eraseGridPanel)}
-          style={{ color: globalColor }}
+          style={{ color: globalColor, fontSize: globalSize +"px" }}
         >
           Clear
         </button>
       </div>
 
       <div className="colors-container">
-        <h3 style={{ color: globalColor }}>Pick a Color: </h3>
+        <h3 style={{ color: globalColor, fontSize: globalSize +"px" }}>Pick a Color: </h3>
 
         <div className="colors-palette" onClick={showDisplay}>
           {!showColorDisplay ? (

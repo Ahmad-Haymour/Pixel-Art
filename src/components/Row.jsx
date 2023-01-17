@@ -6,8 +6,9 @@ import "../style/row.scss";
 export default function Row() {
   const { gridWidth } = useColorEditor();
 
-  // It will return an array with length of gridWidth Number
-  // (How many rows = Default = 16px)
+  // (How many colum = Default = 16)
+  // Create 16 Rows 
+  // Loop every single row 
   let pixels = Array.from({ length: gridWidth }).fill("");
 
   return (

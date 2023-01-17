@@ -11,15 +11,16 @@
   background-color: transparent !important;
   color: whitesmoke;
 
+  // Editor Design Desktop
   > h2 {
     border-bottom: 2px red solid;
     border-radius: 15px;
     color: whitesmoke;
     margin: 1rem auto;
-    font-size: 2.2.4rem;
+    font-size: 2.2rem;
     padding: 0.5rem;
   }
-  .grid-dimensions {
+  > .grid-dimensions {
     margin: 1rem auto;
     display: flex;
     gap: 2rem;
@@ -50,13 +51,14 @@
     }
   }
 
+  // Create / Erase Option
   > .grid-options {
-    
     display: flex;
     gap: 5rem;
     margin-bottom: 2rem;
-    >:first-child{
-        // margin-right: 1rem;
+
+    > :first-child {
+      margin-right: 0;
     }
     > button {
       font-size: 2rem;
@@ -67,44 +69,48 @@
       border-radius: 10px;
       cursor: pointer;
       font-family: unset;
-    //   margin-right: -1rem;
+      margin-left: 1rem;
 
-      &:hover{
+      &:hover {
         transform: scale(1.1);
         cursor: pointer;
-    }
+      }
     }
   }
 
+  // Color selector
   .colors-container {
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 
     > h3 {
       font-size: 2.4rem;
+      margin-left: 1rem;
     }
     .colors-palette {
- 
       > .selected-color {
         border: 4px solid white;
         height: 2.8rem;
         width: 150px;
         cursor: pointer;
+        margin-right: -2rem;
       }
     }
   }
+
+  // Mode Option
   > .mode {
     width: 300px;
     margin: 0 auto;
     > h3 {
       margin: 1.5rem auto 3rem;
       font-size: 2.5rem;
-      >span{
+      > span {
         border-bottom: 2px solid red;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
         font-size: 2rem;
-        text-transform: uppercase ;
+        text-transform: uppercase;
       }
     }
     > .options {
@@ -117,10 +123,10 @@
         padding: 0.5rem 1rem;
         color: whitesmoke;
         cursor: pointer;
-        &:hover{
-            transform: scale(1.2);
-            cursor: pointer;
-        }    
+        &:hover {
+          transform: scale(1.2);
+          cursor: pointer;
+        }
 
         > :first-child {
           stroke: "white";
@@ -129,6 +135,103 @@
           font-size: 6rem;
           border: 1px solid rgba(255, 255, 255, 0.768);
           padding: 1rem;
+        }
+      }
+    }
+  }
+
+  // Editor Options Responsive
+  @media screen and (max-width: 420px) {
+    padding: 0;
+    min-width: unset;
+    width: 100% !important;
+
+    > h2 {
+      font-size: 1.5rem !important;
+    }
+
+    > .grid-dimensions {
+      margin: 1rem auto;
+      display: flex;
+      gap: 2rem;
+
+      > section {
+        border: 1px solid red;
+        border-radius: 10px;
+        padding: 1rem 0;
+
+        > label {
+          font-size: 1.3rem !important;
+        }
+        > select {
+          font-size: 1.1rem !important;
+        }
+      }
+    }
+
+    > .grid-options {
+      margin: 0 auto;
+      text-align: center;
+
+      > :first-child {
+        margin-right: -2rem;
+      }
+      > button {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .colors-container {
+      > h3 {
+        font-size: 1.7rem !important;
+        margin-left: 5rem !important;
+      }
+      .colors-palette {
+        width: 100%;
+        > .selected-color {
+          border: 4px solid white;
+          height: 2rem !important;
+          width: 100px !important;
+          margin-left: 4rem;
+        }
+      }
+    }
+    .colors-container {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > h3 {
+        font-size: 1.7rem !important;
+        margin-left: 9rem;
+      }
+      .colors-palette {
+        > .selected-color {
+          border: 4px solid white;
+          height: 2rem !important;
+          width: 100px !important;
+        }
+      }
+    }
+    > .mode {
+      > h3 {
+        font-size: 1.5rem !important;
+        > span {
+          font-size: 1.5rem !important;
+        }
+      }
+
+      // Paint / Erase Icons Responsive
+      > .options {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+
+        > span {
+          > :first-child {
+            font-size: 5rem !important;
+          }
         }
       }
     }

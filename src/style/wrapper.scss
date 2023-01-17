@@ -3,13 +3,12 @@
   place-items: center;
   border-top: 1px solid whitesmoke;
 
-  > .editor-section{
-
+  > .editor-section {
     position: relative;
-    >.sketch-picker {
-        position: absolute;
-        top: -3rem;
-        left: 5rem;
+    > .sketch-picker {
+      position: absolute;
+      top: -3rem;
+      left: 5rem;
     }
   }
 
@@ -27,7 +26,6 @@
 
         .drawing-panel {
           margin: 0;
-  
         }
         .colors-palette {
           > .swatches-picker {
